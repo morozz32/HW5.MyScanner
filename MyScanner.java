@@ -3,7 +3,7 @@ import java.nio.charset.*;
 
 public class MyScanner implements Closeable {
     public Reader reader;
-    public char[] buffer = new char[100];
+    public char[] buffer = new char[8192];
     public int start = -1;
     public int end;
     public Separator separator;
